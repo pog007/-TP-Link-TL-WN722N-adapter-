@@ -4,7 +4,7 @@
 
 !Use these commands to get the adapter working on Kali for packet injection and monitoring:
 !Commands:
-==========
+```
 sudo apt update
 sudo apt upgrade
 sudo apt install bc
@@ -28,13 +28,14 @@ cd rtl8188eus
 sudo make
 sudo make install
 sudo modprobe 8188eu
-
+```
 
 !To enable Monitor mode and test packet injection:
-!=================================================
+```
 sudo ifconfig wlan0 down
 sudo airmon-ng check kill
 sudo iwconfig wlan0 mode monitor
 sudo ifconfig wlan0 up
 iwconfig                             
 sudo aireplay-ng --test wlan0
+```
